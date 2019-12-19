@@ -4962,4 +4962,10 @@ declare namespace cytoscape {
      * http://js.cytoscape.org/#extensions
      */
     function use(module: Ext): void;
+    /**
+     * Surpress Cytoscape internal warnings globally with a flag.
+     * @param condition If true, all Cytoscape warnings are surpressed.
+     * https://github.com/cytoscape/cytoscape.js/issues/2258#issuecomment-467995089
+     */
+    function warnings(condition: boolean): void;
 }
